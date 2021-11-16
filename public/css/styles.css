@@ -1,0 +1,31 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container-nav{
+    background-image: url(../img/FONDO\ ZOOM.jpg);
+    background-repeat: no-repeat;
+}
+.nav_init{
+    background: linear-gradient(90deg, rgba(0,0,0,0.7),rgba(255,255,255,0));
+}
+.ratings i {
+    color: #cecece;
+    font-size: 20px
+}
+
+.rating-color {
+    color: #fbc634 !important
+}
+.avatar{
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-120%,-50%);
+}
+.vista{
+    width: 500px;
+    height: 400px;
+}
