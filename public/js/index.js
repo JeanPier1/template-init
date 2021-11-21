@@ -105,5 +105,15 @@ clickInscribirme.addEventListener("click", () => {
 		mensaje: MensajeTextarea.value,
 	};
 
+	Swal.fire({
+		title: "Enviado!!! Muchas Gracias",
+		icon: "success",
+		showClass: {
+			popup: "animate__animated animate__fadeInDown",
+		},
+		hideClass: {
+			popup: "animate__animated animate__fadeOutUp",
+		},
+	});
 	console.log(textopost);
 });

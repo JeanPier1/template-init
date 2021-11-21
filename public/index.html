@@ -21,6 +21,10 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
 	</head>
 	<body>
 		<div>
@@ -518,63 +522,91 @@
 								<div class="row">
 									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 										<br />
-										<div class="container">
-											<div class="row">
-												<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-													<input
-														type="text"
-														class="form-control"
-														placeholder="Nombres"
-														required
-														id="nombres"
-													/>
-													<br />
-													<select class="form-select" id="docencia">
-														<option selected>Docencia de enseñanza</option>
-														<option value="1">Inicial</option>
-														<option value="2">Primaria</option>
-														<option value="3">Secundaria</option>
-													</select>
+										<form class="needs-validation" novalidate>
+											<div class="container">
+												<div class="row">
+													<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+														<div>
+															<label
+																for="nombres"
+																class="form-label"
+																style="color: #fff;"
+																>Nombres</label
+															>
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Nombres"
+																required
+																id="nombres"
+															/>
+															<div class="valid-feedback">
+																Por favor, Escriba sus nombres
+															</div>
+														</div>
+
+														<br />
+														<select class="form-select" id="docencia">
+															<option selected>Docencia de enseñanza</option>
+															<option value="1">Inicial</option>
+															<option value="2">Primaria</option>
+															<option value="3">Secundaria</option>
+														</select>
+													</div>
+													<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+														<div>
+															<label
+																for="email"
+																style="color: #fff;"
+																class="form-label"
+																>Correo</label
+															>
+															<div class="input-group has-validation">
+																<input
+																	type="email"
+																	class="form-control"
+																	placeholder="Correo"
+																	required
+																	id="email"
+																/>
+															</div>
+															<div class="invalid-feedback">
+																Por favor , escriba su correo electrónico
+															</div>
+														</div>
+
+														<br />
+														<select class="form-select" id="select-grado">
+															<option selected>Grado Cursando</option>
+														</select>
+													</div>
 												</div>
-												<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-													<input
-														type="email"
-														class="form-control"
-														placeholder="Correo"
-														required
-														id="email"
-													/>
-													<br />
-													<select class="form-select" id="select-grado">
-														<option selected>Grado Cursando</option>
-													</select>
+												<br />
+												<div>
+													<div class="form-floating">
+														<textarea
+															class="form-control"
+															placeholder="Leave a comment here"
+															id="floatingTextarea"
+															rows="5"
+															style="height: 100%;"
+															required
+														></textarea>
+														<label for="floatingTextarea">Mensaje</label>
+													</div>
+												</div>
+												<br />
+												<div>
+													<button
+														type="button"
+														id="inscribirme"
+														class="btn btn-primary"
+													>
+														Inscribirme
+													</button>
 												</div>
 											</div>
-											<br />
-											<div>
-												<div class="form-floating">
-													<textarea
-														class="form-control"
-														placeholder="Leave a comment here"
-														id="floatingTextarea"
-														rows="5"
-														style="height: 100%;"
-														required
-													></textarea>
-													<label for="floatingTextarea">Mensaje</label>
-												</div>
-											</div>
-											<br />
-											<div>
-												<button
-													type="button"
-													id="inscribirme"
-													class="btn btn-primary"
-												>
-													Inscribirme
-												</button>
-											</div>
-										</div>
+										</form>
 									</div>
 									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
 								</div>
@@ -694,6 +726,7 @@
 			</div>
 		</div>
 		<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<script src="js/index.js"></script>
 	</body>
 </html>
